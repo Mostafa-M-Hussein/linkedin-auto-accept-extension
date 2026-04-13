@@ -1,0 +1,26 @@
+{
+    "manifest_version": 3,
+    "name": "LinkedIn Auto-Accept with Filters",
+    "version": "1.0.0",
+    "description": "Auto-accept LinkedIn connections with intelligent filtering based on job title, company, and skills",
+    "permissions": [
+          "scripting",
+          "activeTab",
+          "storage"
+    ],
+    "host_permissions": [
+          "https://www.linkedin.com/mynetwork/invitation-manager/*"
+    ],
+    "action": {
+          "default_popup": "popup.html",
+          "default_title": "LinkedIn Auto-Accept"
+    },
+    "background": {
+          "service_worker": "background.js"
+    },
+    "icons": {
+          "16": "images/icon16.png",
+          "48": "images/icon48.png",
+          "128": "images/icon128.png"
+    }
+}
